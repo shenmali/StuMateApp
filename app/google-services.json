@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "271553944324",
+    "project_id": "stumateapp",
+    "storage_bucket": "stumateapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271553944324:android:ff8d7cc3cbe8c33f9c8e51",
+        "android_client_info": {
+          "package_name": "com.shenmali.stumateapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_Xmshto-DJRw8Tm2AvC8xYvndqaARKfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

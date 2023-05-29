@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">StuMateApp</string>
+    <string name="login">Login</string>
+    <string name="signup">Register</string>
+    <string name="send_verification_email">Sent Varification Code</string>
+    <string name="title_students">Students</string>
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="title_map">Map</string>
+    <string name="title_select_location">Select Loc\n</string>
+    <string name="title_match_requests">Match Request</string>
+    <!-- default notification channel -->
+    <string name="default_notification_channel_id">default_channel</string>
+    <string name="default_notification_channel_name">Notifications</string>
+    <string name="splash_screen_view_icon_description">Open Logo</string>
+    <string name="splash_screen_view_branding_description">Mark</string>
+</resources>
