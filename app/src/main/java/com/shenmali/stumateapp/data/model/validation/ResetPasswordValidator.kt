@@ -10,6 +10,9 @@ class ResetPasswordValidator @Inject constructor() : Validator<ResetPasswordCred
         if(args.email.isEmpty()) {
             error("E-Mail cannot be empty")
         }
+        if (!args.email.endsWith("@std.yildiz.edu.tr")) {
+            error("E-mail must end with @std.yildiz.edu.tr")
+        }
         if(!Patterns.EMAIL_ADDRESS.matcher(args.email).matches()) {
             error("Invalid E-Mail")
         }

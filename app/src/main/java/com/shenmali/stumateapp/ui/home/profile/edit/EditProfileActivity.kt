@@ -197,11 +197,11 @@ class EditProfileActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener
                     binding.textInputLayoutHomeDistance.isVisible = true
                     binding.textInputLayoutHomeDistance.hint =
                         if (selectedType == Student.StudentType.SEEKER) "Distance to Campus (km)"
-                        else "Far from campus (km)"
+                        else "Distance to Campus (km)"
                     binding.textInputLayoutHomeTime.isVisible = true
                     binding.textInputLayoutHomeTime.hint =
-                        if (selectedType == Student.StudentType.SEEKER) "Education Period"
-                        else "Education Period"
+                        if (selectedType == Student.StudentType.SEEKER) "Duration to Stay (term)"
+                        else "Duration to Share (term)"
                 }
 
                 else -> {
@@ -285,7 +285,7 @@ class EditProfileActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener
                 localStorageRepository.saveStudent(newStudentFinal)
                 val intent = Intent().apply { putExtra("student", newStudentFinal) }
                 setResult(Activity.RESULT_OK, intent)
-                toast("Updeated Successfully")
+                toast("Updated Successfully")
                 finish()
             } catch (e: CancellationException) {
                 // ignore

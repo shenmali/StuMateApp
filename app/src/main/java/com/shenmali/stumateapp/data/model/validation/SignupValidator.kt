@@ -16,6 +16,9 @@ class SignupValidator @Inject constructor() : Validator<SignupCredentials> {
         if (!Patterns.EMAIL_ADDRESS.matcher(args.email).matches()) {
             error("Invalid E-mail")
         }
+        if (!args.email.endsWith("@std.yildiz.edu.tr")) {
+            error("E-mail must end with @std.yildiz.edu.tr")
+        }
         if (args.password.length < 8) {
             error("Password must be at least 6 characters")
         }
